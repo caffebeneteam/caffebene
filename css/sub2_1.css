@@ -19,7 +19,7 @@
     width: 1200px;
     margin: 0 auto;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
 }
 #lnb::after {
     content: '';
