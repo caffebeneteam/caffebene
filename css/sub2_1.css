@@ -18,20 +18,23 @@
 #lnb {
     width: 1200px;
     margin: 0 auto;
-    font-size: 18px;
-    font-weight: 500;
+    /* background: #abc; */
 }
 #lnb::after {
     content: '';
     display: block;
     clear: both;
 }
-#lnb > ul > li > a {
+#lnb ul li a {
     float: left;
-    width: calc(1200px / 6);
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    /* border: 1px solid #ccc; */
-    padding: 20px 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    /* padding: 20px 0 20px 0; */
 }
 #lnb > ul > li > .accent {
     background-color: #203053;
@@ -55,14 +58,15 @@ div.location > span {
 #main > .slider > img {
     width: 1200px;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 #main {
     max-width: 1200px;
     min-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 50px;
+    /* background: #ccc; */
   }
 
 .sub_txt {
