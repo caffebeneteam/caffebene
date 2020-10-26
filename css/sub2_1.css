@@ -21,11 +21,16 @@
     font-size: 18px;
     font-weight: bold;
 }
+#lnb::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 #lnb > ul > li > a {
     float: left;
     width: calc(1200px / 6);
     text-align: center;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 20px 0 20px 0;
 }
 #lnb > ul > li > .accent {
