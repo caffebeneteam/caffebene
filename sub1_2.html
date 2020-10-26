@@ -97,7 +97,7 @@
 
   <section id="map">
     <h1>찾아오시는길</h1>
-    <img src="./image/map.png" alt="지도">
+    <div id="daumRoughmapContainer1603701863294" class="root_daum_roughmap root_daum_roughmap_landing"></div>
     <p>주소 : 서울시 성동구 상원1길 25</p>
     <p>오시는길 : 뚝섬역 6번 출구 184m  앞 </p>
   </section>
@@ -136,5 +136,14 @@
       </ul>  
     </div>
   </footer>
+  
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp" : "1603701863294",
+      "key" : "22np6",
+      "mapWidth" : "1200",
+      "mapHeight" : "500"
+    }).render();
+  </script>
 </body>
 </html>
