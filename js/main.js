@@ -28,3 +28,18 @@ $(document).ready(function(){
   });
 
 });
+
+$(function () {
+  var left = 0;
+  var duration = 3000;
+
+  setInterval(function () {
+    if(left <= -2396) {
+      left = 0;
+    }
+    else {
+      left = left - 1198;
+    }
+    $('#pick > ul > li').css('left', left);
+  }, duration);
+})
