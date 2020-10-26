@@ -316,6 +316,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: #008392;
+  margin-top: 9px;
 }
 #news > #notice > ul > li {
   display: block;
