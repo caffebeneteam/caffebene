@@ -173,7 +173,13 @@ body {
   /* outline: 1px solid red; */
 }
 
+#pick > .grid {
+  /* outline: 1px solid red; */
+  width: 3594px;
+}
+
 #pick > .grid > li {
+  position: relative;
   width: 277px;
   float: left;
   margin-right: 30px;
