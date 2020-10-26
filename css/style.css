@@ -168,24 +168,34 @@ body {
   font-weight: bold;
   color: #008392;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   text-transform: uppercase;
   /* outline: 1px solid red; */
 }
 
+#pick > .grid {
+  /* outline: 1px solid red; */
+  width: 3594px;
+}
+
 #pick > .grid > li {
+  position: relative;
   width: 277px;
   float: left;
   margin-right: 30px;
   
 }
-#pick > .grid > li:last-child {
+#pick > .grid > li:last-child(4n) {
   margin-right: 0;
 }
 
 #pick .grid-item-txt {
   margin-top: 20px;
   text-align: center;
+}
+
+#pick .grid-item-txt > p:first-child {
+  margin-bottom: 10px;
 }
 
 #pick .grid-item-txt .price {
