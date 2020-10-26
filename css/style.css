@@ -188,10 +188,6 @@ body {
   text-align: center;
 }
 
-#pick .grid-item-txt > p:first-child {
-  margin-bottom: 10px;
-}
-
 #pick .grid-item-txt .price {
   tab-size: 14px;
   color: #008392;
