@@ -185,7 +185,7 @@ body {
   margin-right: 30px;
   
 }
-#pick > .grid > li:last-child(4n) {
+#pick > .grid > li:nth-child(4n) {
   margin-right: 0;
 }
 
