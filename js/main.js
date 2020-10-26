@@ -60,5 +60,4 @@ $(function () {
     $('#pick > .pager > a').removeClass('active');
     $('#pick > .pager > a').eq(2).addClass('active');
   })
-}) 
 })
