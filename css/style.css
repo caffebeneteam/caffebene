@@ -173,19 +173,13 @@ body {
   /* outline: 1px solid red; */
 }
 
-#pick > .grid {
-  /* outline: 1px solid red; */
-  width: 3594px;
-}
-
 #pick > .grid > li {
-  position: relative;
   width: 277px;
   float: left;
   margin-right: 30px;
   
 }
-#pick > .grid > li:nth-child(4n) {
+#pick > .grid > li:last-child {
   margin-right: 0;
 }
 
@@ -201,7 +195,7 @@ body {
 
 .pager {
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -221,20 +215,20 @@ body {
 
 /* join-banner */
 #join-banner {
+  position: relative;
   width: 1200px;
   height: 360px;
   margin: 0 auto;
   background: url(../image/join.png);
+  /* background-size: cover; */
   /* outline: 1px solid red; */
   margin-bottom: 50px;
 }
 #join-banner > div {
-  position: relative;
+  position: absolute;
   left: 100px;
   top: 260px;
-  height: 50px;
-  left: 100px;
-  /* outline: 1px solid red; */
+  /* outline: 1px solid blue; */
 }
 
 #join-banner a {
@@ -243,10 +237,12 @@ body {
   width: 160px;
   line-height: 50px;
   text-align: center;
-  margin-right: 25px;
   font-size: 18px;
   color: #008392;
   outline: 1px solid #008392;
+}
+#join-banner > div > a:first-child {
+  margin-right: 20px;
 }
 
 /* search */
@@ -334,13 +330,14 @@ body {
 
 /* sns */
 #sns {
-  height: 861px;
+  width: 1200px;
   background: #f2f2f2;
   margin: 0 auto;
   padding-top: 100px;
   text-align: center;
+  
 }
-#sns h1 {
+#sns h2 {
   margin-bottom: 15px;
 }
 #sns p {
@@ -348,15 +345,16 @@ body {
 }
 
 #sns > .sns_photo {
-  width: 1200px;
-  margin: 0 auto;
+  overflow: hidden;
   /* outline: 1px solid red; */
 }
-#sns > .sns_photo li img {
+#sns > .sns_photo li {
   float: left;
-  display: block;
   width: 300px;
   height: 300px;
+}
+#sns > .sns_photo li img {
+  width: 100%;
 }
 
 /* footer */
