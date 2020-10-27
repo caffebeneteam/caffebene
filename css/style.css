@@ -183,6 +183,7 @@ body {
   width: 277px;
   float: left;
   margin-right: 30px;
+  transition: left 0.5s ease-out;
   
 }
 #pick > .grid > li:nth-child(4n) {
