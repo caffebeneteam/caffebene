@@ -1,6 +1,6 @@
 
 /* banner */
-#visual {
+#sub1_2_header {
   max-width: 1920px;
   min-width: 1200px;
   height: 330px;
@@ -11,7 +11,7 @@
   /* outline: 1px solid red; */
 }
 
-#visual h1{
+#sub1_2_header h1{
   height: 500px;
   color: #fff;
   font-size: 40px;
@@ -59,23 +59,23 @@
 #map {
   width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
   text-align: center;
   /* outline: 1px solid red; */
   margin-bottom: 44px;
-}
-#map img {
-  /* outline: 1px solid red; */
-  margin-bottom: 50px;
+  /* background: #abc; */
 }
 
-#map h1 {
+#map h2 {
   font-size: 30px;
   font-weight: bold;
   /* outline: 1px solid red; */
   margin-bottom: 50px;
 }
+#map iframe {
+  margin-bottom: 50px;
+}
 #map p {
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 15px;
+  /* background: #ccc; */
 }
