@@ -29,17 +29,50 @@ $(document).ready(function(){
 
 });
 
+// Pick slider
 $(function () {
   var left = 0;
   var duration = 3000;
+  var slider;
+  
+  function changeSlider(paramLeft) {
+    $('.pager > a').removeClass('active');
+    $('.pager > a').eq(paramLeft).addClass('active');
+  }
 
-  setInterval(function () {
-    if(left <= -2396) {
-      left = 0;
+  function sliderStart() {
+    slider = setInterval(function () {
+      $("#pick > .grid").hide();
+      if(left > 1) {
+        left = 0;
+      }
+      else {
+        left = left + 1;
+      }
+      //$('#pick > ul > li').css('left', left);
+      $("#pick > .grid").eq(left).show();
+      console.log(left);
+      changeSlider(left);
+    }, duration);
+  }
+
+  // 슬라이더 정지
+  function sliderStop() {
+    clearInterval(slider);
+    // console.log('stop');
+  }
+
+  sliderStart();
+
+  // 마우스가 올라가면 슬라이더 정지
+  $('.grid, .pager').hover(
+    function() {
+      sliderStop();
+    },
+    function() {
+      sliderStart();
+      // console.log('start');
     }
-    else {
-      left = left - 1198;
-    }
-    $('#pick > ul > li').css('left', left);
-  }, duration);
-})
+  )
+
+}) //$end
